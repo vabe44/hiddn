@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    background-color: #974444;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+img.header.icon {
+    height: 28px;
+    width: 28px;
+
+}
+
+img.hiddn.icon {
+    height: 36px;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+.profile .profile-picture {
+    object-fit: cover;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+
+.profile img.country {
+    grid-column: 2;
+    grid-row: 3;
+    height: 22px;
+    width: 22px;
+    margin-right: -5px;
+}
+
+.header .name span {
+    color: white;
+    font-size: x-large;
+    margin-left: 5px;
+}

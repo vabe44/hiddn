@@ -1,0 +1,67 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 4px;
+    padding: 4px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+.card .profile-picture {
+    grid-row: 1 / span 6;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card .country {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.card .name-age {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+.card .matchpercent {
+    grid-row: 3;
+    grid-column: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.overlay {
+    grid-row: 1 / span 6;
+    grid-column: 1 / span 3;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    background-color: black;
+    opacity: 0.6;
+}

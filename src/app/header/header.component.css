@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    background-color: #974444;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+img.header.icon {
+    height: 28px;
+    width: 28px;
+}
+
+img.hiddn.icon {
+    height: 36px;
+}

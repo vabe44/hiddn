@@ -1,0 +1,17 @@
+/* 1 */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login h1 {
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}

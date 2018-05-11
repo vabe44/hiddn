@@ -1,0 +1,46 @@
+.messages {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.profile .profile-picture {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+
+.profile img.country {
+    grid-column: 4;
+    grid-row: 3;
+    margin-right: -5px;
+}
+
+.message .details {
+    padding: 5px;
+}
+
+.message .details p {
+    margin: unset;
+}
+
+.message .details .name-age {
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px 0;
+}
