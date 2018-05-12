@@ -1,5 +1,5 @@
-import { DirectMessageComponent } from './direct-message/direct-message.component';
-import { MessagesComponent } from './messages/messages.component';
+import { DirectMessageComponent } from './components/direct-message/direct-message.component';
+import { MessagesComponent } from './components/messages/messages.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { ProtectedComponent } from './components/protected/protected.component';
 
 // Services
 import { AuthGuardService } from './services/auth-guard.service';
-import { NewPeopleComponent } from './new-people/new-people.component';
+import { NewPeopleComponent } from './components/new-people/new-people.component';
 
 // Routes
 const appRoutes: Routes = [

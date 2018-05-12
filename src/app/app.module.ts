@@ -17,11 +17,13 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { LoginComponent } from './components/login/login.component';
 import { ProtectedComponent } from './components/protected/protected.component';
-import { NewPeopleComponent } from './new-people/new-people.component';
-import { MessagesComponent } from './messages/messages.component';
-import { HeaderComponent } from './header/header.component';
-import { DirectMessageComponent } from './direct-message/direct-message.component';
-import { DirectMessageHeaderComponent } from './direct-message-header/direct-message-header.component';
+import { NewPeopleComponent } from './components/new-people/new-people.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DirectMessageComponent } from './components/direct-message/direct-message.component';
+import { DirectMessageHeaderComponent } from './components/direct-message-header/direct-message-header.component';
+import { NewPeopleCardComponent } from './components/new-people-card/new-people-card.component';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { DirectMessageHeaderComponent } from './direct-message-header/direct-mes
     MessagesComponent,
     HeaderComponent,
     DirectMessageComponent,
-    DirectMessageHeaderComponent
+    DirectMessageHeaderComponent,
+    NewPeopleCardComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,11 @@ import { DirectMessageHeaderComponent } from './direct-message-header/direct-mes
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
-  providers: [AuthenticationService, AuthGuardService],
+  providers: [
+    AuthenticationService,
+    AuthGuardService,
+    UsersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

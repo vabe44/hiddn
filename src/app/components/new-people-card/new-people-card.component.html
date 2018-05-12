@@ -1,0 +1,23 @@
+<div class="card" (click)="toggleOverlay()">
+  <div class="profile-picture">
+    <img src="/assets/images/people/{{ user.profilePicture }}">
+  </div>
+  <div class="country">
+    <img src="/assets/images/flags/fr.svg">
+  </div>
+  <div class="name-age">{{ user.name }}, {{ user.age }}</div>
+  <div class="matchpercent">
+    <img src="/assets/images/{{ user.matchPercent }}-percent.svg">
+  </div>
+  <div *ngIf="showOverlay" class="overlay">
+    <div class="profile icon">
+      <img src="/assets/images/more-options.svg">
+    </div>
+    <div class="like icon">
+      <img src="/assets/images/like.svg">
+    </div>
+    <div class="pass icon">
+      <img src="/assets/images/pass.svg">
+    </div>
+  </div>
+</div>

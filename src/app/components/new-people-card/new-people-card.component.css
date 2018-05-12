@@ -1,16 +1,11 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
-    grid-auto-rows: 1fr;
-    grid-gap: 4px;
-    padding: 4px;
-}
-
 .card {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: 2fr 2fr 2fr;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
+    cursor: pointer;
 }
 
 .card .profile-picture {
@@ -60,8 +55,33 @@
     grid-row: 1 / span 6;
     grid-column: 1 / span 3;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: black;
     opacity: 0.6;
+    cursor: auto;
+}
+
+.overlay .icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: inherit;
+}
+
+.overlay .icon:hover {
+    opacity: unset;
+}
+
+.overlay .icon img:hover {
+    cursor: pointer;
+}
+
+.overlay .profile.icon {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
 }

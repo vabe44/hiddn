@@ -44,3 +44,9 @@
     font-size: larger;
     padding: 5px 0;
 }
+
+.matchpercent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
