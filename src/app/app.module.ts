@@ -24,6 +24,7 @@ import { DirectMessageComponent } from './components/direct-message/direct-messa
 import { DirectMessageHeaderComponent } from './components/direct-message-header/direct-message-header.component';
 import { NewPeopleCardComponent } from './components/new-people-card/new-people-card.component';
 import { UsersService } from './services/users.service';
+import { QuestComponent } from './components/quest/quest.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UsersService } from './services/users.service';
     HeaderComponent,
     DirectMessageComponent,
     DirectMessageHeaderComponent,
-    NewPeopleCardComponent
+    NewPeopleCardComponent,
+    QuestComponent
   ],
   imports: [
     BrowserModule,

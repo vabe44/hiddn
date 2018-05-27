@@ -1,3 +1,4 @@
+import { QuestComponent } from './components/quest/quest.component';
 import { DirectMessageComponent } from './components/direct-message/direct-message.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     { path: 'new-people', component: NewPeopleComponent },
     { path: 'messages', component: MessagesComponent },
     { path: 'direct-message', component: DirectMessageComponent },
+    { path: 'quest', component: QuestComponent },
 ];
 
 export const AppRouting = RouterModule.forRoot(appRoutes);
