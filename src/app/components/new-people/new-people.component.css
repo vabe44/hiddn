@@ -80,3 +80,72 @@
     justify-content: flex-end;
     padding: 0 10px;
 }
+
+.matched-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.matched-overlay p {
+    margin: 24px 10px;
+}
+
+.matched-overlay .profiles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.matched-overlay .profile {
+    width: 125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+.matched-overlay .profile .profile-picture {
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+
+.matched-overlay .profile img.country {
+    grid-column: 2;
+    grid-row: 3;
+    height: 36px;
+    width: 36px;
+    margin-right: -5px;
+}
+
+.matched-overlay p.matched {
+    font-family: 'Courgette';
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 37px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FBF9F9;
+}
+
+.matched-overlay p.talk {
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FBF9F9;
+}

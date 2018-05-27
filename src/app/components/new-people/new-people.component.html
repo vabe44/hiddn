@@ -1,5 +1,23 @@
 <app-header></app-header>
 
 <div class="grid-container">
-  <app-new-people-card *ngFor="let user of users" [user]="user"></app-new-people-card>
+  <app-new-people-card *ngFor="let user of users" [user]="user" (like)="onLike($event)" (pass)="onPass($event)"></app-new-people-card>
+</div>
+
+<div *ngIf="showMatchedOverlay" (click)="hideMatchedOverlay()" class="matched-overlay">
+  <div class="matched-overlay-container">
+    <div class="profiles">
+      <div class="match profile">
+        <img class="profile-picture" src="/assets/images/people/{{ matchedWith?.profilePicture }}">
+        <img class="country" src="/assets/images/flags/gb.svg">
+      </div>
+      <div class="user profile">
+        <img class="profile-picture" src="/assets/images/oliver.jpg">
+        <img class="country" src="/assets/images/flags/de.svg">
+      </div>
+    </div>
+    <p class="matched">What a fit!</p>
+    <img src="/assets/images/matched-percent.svg">
+    <p class="talk">Choose a common interest to talk about!</p>
+  </div>
 </div>

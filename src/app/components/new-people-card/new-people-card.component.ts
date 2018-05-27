@@ -1,5 +1,5 @@
 import { User } from './../../data/users.interface';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-new-people-card',
@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NewPeopleCardComponent implements OnInit {
   @Input() user: User;
+  @Output() like = new EventEmitter<any>();
+  @Output() pass = new EventEmitter<User>();
   showOverlay = false;
 
   constructor() { }
@@ -17,6 +19,7 @@ export class NewPeopleCardComponent implements OnInit {
 
   toggleOverlay() {
     this.showOverlay = !this.showOverlay;
+    // this.showOverlay = true;
   }
 
   onMouseOver() {
@@ -25,5 +28,17 @@ export class NewPeopleCardComponent implements OnInit {
 
   onMouseOut() {
     this.showOverlay = false;
+  }
+
+  onLike() {
+    const like = {
+      user: this.user,
+      matched: true
+    };
+    this.like.emit(like);
+  }
+
+  onPass() {
+    this.pass.emit(this.user);
   }
 }
