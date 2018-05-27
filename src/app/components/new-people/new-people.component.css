@@ -149,3 +149,54 @@
     letter-spacing: 0.2em;
     color: #FBF9F9;
 }
+
+.interest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 0px;
+    background: #F2F2F2;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card:nth-child(1) {
+    transform: rotate(2deg);
+}
+
+.card:nth-child(2) {
+    transform: rotate(-3deg);
+}
+
+.card:nth-child(3) {
+    transform: rotate(-2deg);
+}
+
+.card:nth-child(4) {
+    transform: rotate(4deg);
+}
+
+.card .image {
+    display: flex;
+}
+
+.card .image img {
+    object-fit: cover;
+    max-width: 148px;
+    height: 135px;
+    border-radius: 6px;
+}
+
+.card p.text {
+    font-family: 'Reem Kufi';
+    font-size: 28px;
+    margin: unset;
+    text-align: center;
+    color: #333333;
+}

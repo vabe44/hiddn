@@ -4,7 +4,7 @@
   <app-new-people-card *ngFor="let user of users" [user]="user" (like)="onLike($event)" (pass)="onPass($event)"></app-new-people-card>
 </div>
 
-<div *ngIf="showMatchedOverlay" (click)="hideMatchedOverlay()" class="matched-overlay">
+<div *ngIf="matchedOverlay" (click)="hideMatchedOverlay()" class="matched-overlay">
   <div class="matched-overlay-container">
     <div class="profiles">
       <div class="match profile">
@@ -19,5 +19,44 @@
     <p class="matched">What a fit!</p>
     <img src="/assets/images/matched-percent.svg">
     <p class="talk">Choose a common interest to talk about!</p>
+  </div>
+</div>
+
+<div *ngIf="commonInterestHelper" (click)="hideMatchedOverlay()" class="matched-overlay">
+  <div class="matched-overlay-container">
+    <p class="talk">Choose a common interest to start off the conversation!</p>
+
+    <div class="interest-cards">
+
+      <div routerLink="/direct-message" class="card">
+        <div class="image">
+          <img src="/assets/images/quest/city.png" alt="big city">
+        </div>
+        <p class="text">big city</p>
+      </div>
+
+      <div routerLink="/direct-message" class="card">
+        <div class="image">
+          <img src="/assets/images/quest/mountains.jpg" alt="mountains">
+        </div>
+        <p class="text">mountains</p>
+      </div>
+
+      <div routerLink="/direct-message" class="card">
+        <div class="image">
+          <img src="/assets/images/quest/beach.jpg" alt="beach">
+        </div>
+        <p class="text">beach</p>
+      </div>
+
+      <div routerLink="/direct-message" class="card">
+        <div class="image">
+          <img src="/assets/images/quest/home.jpg" alt="home">
+        </div>
+        <p class="text">home</p>
+      </div>
+
+    </div>
+
   </div>
 </div>

@@ -30,6 +30,7 @@ import { UsersService } from './services/users.service';
 import { QuestComponent } from './components/quest/quest.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { DirectMessageInterestComponent } from './components/direct-message-interest/direct-message-interest.component';
 
 
 
@@ -46,7 +47,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     NewPeopleCardComponent,
     QuestComponent,
     AchievementsComponent,
-    ProfileComponent
+    ProfileComponent,
+    DirectMessageInterestComponent
   ],
   imports: [
     BrowserModule,

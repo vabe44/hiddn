@@ -1,0 +1,131 @@
+.quest:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('/assets/images/quest/holiday-destination-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(6px) brightness(85%);
+    -moz-filter: blur(6px) brightness(85%);
+    -o-filter: blur(6px) brightness(85%);
+    -ms-filter: blur(6px) brightness(85%);
+    filter: blur(6px) brightness(85%);
+}
+
+.quest {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quest-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+}
+
+.quest-header .button {
+    padding: 15px 15px 0 15px;
+}
+
+.quest-header .button img {
+    width: 21px;
+    height: 21px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #974444;
+}
+
+.quest-header .button p {
+    font-family: 'Reem Kufi';
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: unset;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.page-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p.question, .page-title p {
+    font-family: 'Reem Kufi';
+    font-size: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: unset;
+}
+
+.page-title p {
+    font-size: 24px;
+}
+
+.answer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 0px;
+    background: #F2F2F2;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card:nth-child(1) {
+    transform: rotate(2deg);
+}
+
+.card:nth-child(2) {
+    transform: rotate(-3deg);
+}
+
+.card:nth-child(3) {
+    transform: rotate(-2deg);
+}
+
+.card:nth-child(4) {
+    transform: rotate(4deg);
+}
+
+.card .image {
+    display: flex;
+}
+
+.card .image img {
+    object-fit: cover;
+    max-width: 148px;
+    height: 135px;
+    border-radius: 6px;
+}
+
+.card p.text {
+    font-family: 'Reem Kufi';
+    font-size: 28px;
+    margin: unset;
+    text-align: center;
+}

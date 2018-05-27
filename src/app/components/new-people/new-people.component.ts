@@ -11,7 +11,8 @@ export class NewPeopleComponent implements OnInit {
 
   users: User[] = [];
   matchedWith: User;
-  showMatchedOverlay = false;
+  matchedOverlay = false;
+  commonInterestHelper = false;
   constructor(private usersService: UsersService) { }
 
   ngOnInit() {
@@ -22,17 +23,26 @@ export class NewPeopleComponent implements OnInit {
   onLike(like) {
     if (like.matched) {
       this.matchedWith = like.user;
-      this.showMatchedOverlay = true;
+      this.matchedOverlay = true;
     } else {
-      this.showMatchedOverlay = false;
+      this.matchedOverlay = false;
     }
-  }
-
-  hideMatchedOverlay() {
-    this.showMatchedOverlay = false;
   }
 
   onPass(user: User) {
     this.users = this.users.filter(u => u !== user);
+  }
+
+  hideMatchedOverlay() {
+    this.matchedOverlay = false;
+    this.showCommonInterestHelper();
+  }
+
+  showCommonInterestHelper() {
+    this.commonInterestHelper = true;
+  }
+
+  hideCommonInterestHelper() {
+    this.commonInterestHelper = false;
   }
 }
