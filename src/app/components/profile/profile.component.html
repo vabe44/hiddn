@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<div class="profile-page">
+  <div class="picture">
+    <div class="card">
+      <div class="profile-picture">
+          <ngx-slick class="carousel" #slickerModal="slick-modal" [config]="profilePictureSliderConfig">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <div class="square">
+                <div class="content">
+                  <img src="{{ slide.img }}">
+                </div>
+              </div>
+            </div>
+          </ngx-slick>
+      </div>
+      <div class="country">
+        <img src="/assets/images/flags/fr.svg">
+      </div>
+      <div class="name-age">Lisa, 22</div>
+      <div class="matchpercent">
+        <img src="/assets/images/89-percent.svg">
+      </div>
+    </div>
+  </div>
+  <div class="profile-details">
+    <div class="bio">
+      <p class="title">Description:</p>
+      <p>Funny girl looking for new friends and shit 😂😂</p>
+    </div>
+    <div class="instagram">
+      <p class="title">Instagram</p>
+      <div class="images">
+        <ngx-slick class="carousel" #slickModal="slick-modal" [config]="instagramSliderConfig">
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <div class="image">
+              <img src="{{ slide.img }}" alt="" width="100%">
+            </div>
+          </div>
+        </ngx-slick>
+      </div>
+    </div>
+  </div>
+</div>

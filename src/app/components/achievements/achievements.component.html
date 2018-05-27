@@ -1,4 +1,4 @@
-<div class="achievements">
+<div class="achievements" (click)="hideModal()">
 
   <div class="achievements-header">
     <div routerLink="/new-people" class="back button">
@@ -10,50 +10,62 @@
   </div>
 
   <div class="achievements-icons">
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/star.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/earth-globe.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/hearth.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
-    <div class="icon">
+    <div (click)="toggleModal($event)" class="icon">
       <img src="/assets/images/lock.svg">
     </div>
+  </div>
+</div>
+
+<div *ngIf="modalActive" (click)="toggleModal($event)" class="achievement modal">
+  <div class="icon">
+    <img src="/assets/images/earth-globe.svg">
+  </div>
+  <p class="name">Mr. Worldwide</p>
+  <p class="description">Have a friend from every continent of the world.</p>
+  <div class="progressbar">
+    <div class="bar"></div>
+    <span>7/7</span>
   </div>
 </div>

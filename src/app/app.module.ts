@@ -15,6 +15,9 @@ import { environment } from '../environments/environment';
 // Import AngularFire
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { SlickModule } from 'ngx-slick';
+
 import { LoginComponent } from './components/login/login.component';
 import { ProtectedComponent } from './components/protected/protected.component';
 import { NewPeopleComponent } from './components/new-people/new-people.component';
@@ -26,6 +29,9 @@ import { NewPeopleCardComponent } from './components/new-people-card/new-people-
 import { UsersService } from './services/users.service';
 import { QuestComponent } from './components/quest/quest.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
+import { ProfileComponent } from './components/profile/profile.component';
+
+
 
 @NgModule({
   declarations: [
@@ -39,7 +45,8 @@ import { AchievementsComponent } from './components/achievements/achievements.co
     DirectMessageHeaderComponent,
     NewPeopleCardComponent,
     QuestComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,8 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 
     // Init Firebase with environment configuration
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    SlickModule.forRoot()
   ],
   providers: [
     AuthenticationService,

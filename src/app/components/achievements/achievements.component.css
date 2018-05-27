@@ -48,6 +48,7 @@
 .achievements-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .icon {
@@ -56,4 +57,58 @@
     display: flex;
     justify-content: center;
     margin: 6px 16px;
+}
+
+.achievement.modal {
+    position: absolute;
+    top: 33%;
+    padding: 15px;
+    margin: 0 20px;
+    text-align: center;
+    background: #383535;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.achievement.modal .icon {
+    margin: 0 auto;
+}
+
+p.name {
+    font-family: 'Open Sans';
+    line-height: normal;
+    font-size: 18px;
+    color: #D9D3D3;
+    margin: unset;
+}
+
+p.description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    color: #D9D3D3;
+}
+
+.progressbar {
+    display: flex;
+    align-items: center;
+}
+
+.progressbar .bar {
+    flex: 1;
+    background: #27AE60;
+    border-radius: 6px;
+    height: 14px;
+    margin: 0 10px;
+}
+
+.progressbar span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    color: #D9D3D3;
+    margin: 0 10px;
 }
