@@ -1,3 +1,4 @@
+import { AchievementsComponent } from './components/achievements/achievements.component';
 import { QuestComponent } from './components/quest/quest.component';
 import { DirectMessageComponent } from './components/direct-message/direct-message.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     { path: 'messages', component: MessagesComponent },
     { path: 'direct-message', component: DirectMessageComponent },
     { path: 'quest', component: QuestComponent },
+    { path: 'achievements', component: AchievementsComponent },
 ];
 
 export const AppRouting = RouterModule.forRoot(appRoutes);

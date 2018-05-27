@@ -36,13 +36,21 @@
 }
 
 .message .details p {
+    font-family: Helvetica;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    color: #877C7C;
     margin: unset;
 }
 
 .message .details .name-age {
-    font-weight: bold;
-    font-size: larger;
+    font-family: 'Open Sans';
+    /* font-weight: bold; */
+    line-height: normal;
+    font-size: 18px;
     padding: 5px 0;
+    color: black;
 }
 
 .matchpercent {

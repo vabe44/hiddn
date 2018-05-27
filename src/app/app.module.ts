@@ -25,6 +25,7 @@ import { DirectMessageHeaderComponent } from './components/direct-message-header
 import { NewPeopleCardComponent } from './components/new-people-card/new-people-card.component';
 import { UsersService } from './services/users.service';
 import { QuestComponent } from './components/quest/quest.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { QuestComponent } from './components/quest/quest.component';
     DirectMessageComponent,
     DirectMessageHeaderComponent,
     NewPeopleCardComponent,
-    QuestComponent
+    QuestComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,
