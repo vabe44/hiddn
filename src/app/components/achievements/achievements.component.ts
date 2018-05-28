@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-achievements',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AchievementsComponent implements OnInit {
 
   modalActive = false;
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit() {
   }
@@ -24,5 +25,9 @@ export class AchievementsComponent implements OnInit {
 
   hideModal() {
     this.modalActive = false;
+  }
+
+  navigateBack() {
+    this.location.back();
   }
 }
