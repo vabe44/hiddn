@@ -1,5 +1,33 @@
 <div class="header">
   <img routerLink="/new-people" src="/assets/images/new-people-icon.svg" class="header icon" alt="New People">
-  <img routerLink="/" src="/assets/images/hiddn-logo.svg" class="hiddn icon" alt="Hiddn Logo">
+  <img (click)="showMatchedOverlay()" src="/assets/images/hiddn-logo.svg" class="hiddn icon" alt="Hiddn Logo">
   <img routerLink="/messages" src="/assets/images/messages-icon.svg" class="header icon" alt="Messages">
+</div>
+
+<div *ngIf="matchedOverlay" (click)="hideOverlay()" class="matched-overlay">
+  <div class="icons">
+    <div routerLink="/achievements" class="achievements icon">
+      <img src="/assets/images/achievements.svg">
+      <p>achievements</p>
+    </div>
+    <div routerLink="/new-people" class="nearby icon">
+      <img src="/assets/images/pin.svg">
+      <p>nearby</p>
+    </div>
+    <div class="profile">
+      <div class="profile picture icon">
+        <img src="/assets/images/oliver.jpg">
+      </div>
+      <p>Profile</p>
+    </div>
+    <div routerLink="/settings" class="setting icon">
+      <img src="/assets/images/settings.svg">
+      <p>settings</p>
+    </div>
+    <div class="store icon">
+      <img src="/assets/images/bag.svg">
+      <p>Store</p>
+    </div>
+  </div>
+
 </div>

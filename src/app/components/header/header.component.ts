@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  matchedOverlay = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  showMatchedOverlay() {
+    this.matchedOverlay = true;
+  }
+
+  hideOverlay() {
+    this.matchedOverlay = false;
+  }
 }
