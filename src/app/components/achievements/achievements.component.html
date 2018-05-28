@@ -59,13 +59,15 @@
 </div>
 
 <div *ngIf="modalActive" (click)="toggleModal($event)" class="achievement modal">
-  <div class="icon">
-    <img src="/assets/images/earth-globe.svg">
-  </div>
-  <p class="name">Mr. Worldwide</p>
-  <p class="description">Have a friend from every continent of the world.</p>
-  <div class="progressbar">
-    <div class="bar"></div>
-    <span>7/7</span>
+  <div class="modal-container">
+    <div class="icon">
+      <img src="/assets/images/earth-globe.svg">
+    </div>
+    <p class="name">Mr. Worldwide</p>
+    <p class="description">Have a friend from every continent of the world.</p>
+    <div class="progressbar">
+      <div class="bar"></div>
+      <span>7/7</span>
+    </div>
   </div>
 </div>

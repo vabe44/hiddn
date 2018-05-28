@@ -62,11 +62,16 @@
 .achievement.modal {
     position: absolute;
     top: 33%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.modal-container {
+    max-width: 350px;
     padding: 15px;
-    margin: 0 20px;
+    margin: 0 auto;
     text-align: center;
     background: #383535;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .achievement.modal .icon {
