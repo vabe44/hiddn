@@ -1,0 +1,159 @@
+.preferences {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.userprofile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile {
+    width: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+.profile .profile-picture {
+    object-fit: cover;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+
+.profile img.country {
+    grid-column: 2;
+    grid-row: 3;
+    height: 30px;
+    width: 30px;
+    margin-right: -5px;
+}
+
+p.edit-profile,
+p.location {
+    font-family: 'Open Sans';
+    line-height: normal;
+    font-size: 13px;
+    color: #000000;
+    margin: unset;
+}
+
+p.edit-profile {
+    text-align: center;
+    margin-left: -20px;
+}
+
+p.name {
+    font-family: 'Open Sans';
+    line-height: normal;
+    font-size: 24px;
+    color: #4F4F4F;
+    margin: unset;
+}
+
+.gal {
+    margin-top: 15px;
+}
+
+.looking-for, .age, .distance {
+    padding: 10px;
+}
+
+.looking-for p.title, .distance p.title, .age p.title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    line-height: normal;
+    color: #4F4F4F;
+}
+
+.friendship,
+.relationship {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.friendship p,
+.relationship p {
+    flex: 1;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: normal;
+    color: #4F4F4F;
+    margin: 10px 0;
+}
+
+.toggle-check-input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+
+.toggle-check-text {
+    font-family: 'Open Sans';
+    display: inline-block;
+    position: relative;
+    /* text-transform: uppercase; */
+    background: #CCC;
+    padding: 0.25em 0.5em 0.25em 2em;
+    border-radius: 1em;
+    min-width: 2em;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.toggle-check-text:after {
+    content: ' ';
+    display: block;
+    background: #FFF;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 1em;
+    position: absolute;
+    left: 0.3em;
+    top: 0.25em;
+    transition: left 0.15s, margin-left 0.15s;
+}
+
+.toggle-check-text:before {
+    content: 'off';
+}
+
+.toggle-check-input:checked~.toggle-check-text {
+    background: #8ad869;
+    padding-left: 0.5em;
+    padding-right: 2em;
+}
+
+.toggle-check-input:checked~.toggle-check-text:before {
+    content: 'on';
+}
+
+.toggle-check-input:checked~.toggle-check-text:after {
+    left: 100%;
+    margin-left: -1.4em;
+}
+
+.slider {
+    margin: 0 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.userprofile, .looking-for, .distance, .age {
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.userprofile {
+    margin: unset;
+}

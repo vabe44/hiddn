@@ -31,6 +31,7 @@ import { QuestComponent } from './components/quest/quest.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DirectMessageInterestComponent } from './components/direct-message-interest/direct-message-interest.component';
+import { PreferencesComponent } from './components/preferences/preferences.component';
 
 
 
@@ -48,7 +49,8 @@ import { DirectMessageInterestComponent } from './components/direct-message-inte
     QuestComponent,
     AchievementsComponent,
     ProfileComponent,
-    DirectMessageInterestComponent
+    DirectMessageInterestComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,
