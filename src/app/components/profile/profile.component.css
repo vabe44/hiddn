@@ -110,10 +110,13 @@
     display: flex;
     margin: 0 auto;
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+
 }
 
 .instagram .images .image img {
     object-fit: cover;
+    border-radius: 6px;
 }
 
 .square {
